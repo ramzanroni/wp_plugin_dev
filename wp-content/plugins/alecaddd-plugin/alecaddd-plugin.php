@@ -32,8 +32,11 @@ defined('ABSPATH') or die('Hey, You cannot access this file');
 
 class AlecadddPlugin
 {
-    
+    function __construct($string)
+    {
+        echo $string;
+    }
 }
 if(class_exists('AlecadddPlugin')){
-    $alecadddPlugin=new AlecadddPlugin();
+    $alecadddPlugin=new AlecadddPlugin('Hello Plugin');
 }
